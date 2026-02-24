@@ -3,145 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NITHIROTE | 8D MASTER KEY</title>
+    <title>NITHIROTE | SUPERCOMPUTING NFT GENERATE</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #f59e0b; --bg: #020617; }
-        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); color: #f1f5f9; overflow-x: hidden; }
-        
-        /* 8D Glass Effect */
-        .glass-8d { 
-            background: rgba(15, 23, 42, 0.6); 
-            backdrop-filter: blur(25px); 
-            border: 1px solid rgba(245, 158, 11, 0.1);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .glass-8d:hover { 
-            transform: scale(1.02) translateY(-10px) rotateX(5deg);
-            border: 1px solid rgba(245, 158, 11, 0.5);
-            box-shadow: 0 0 40px rgba(245, 158, 11, 0.15);
-        }
-
-        /* Animated Background Particles */
-        #bg-canvas { position: fixed; top: 0; left: 0; z-index: 0; pointer-events: none; }
-
-        /* Neon Glow */
-        .glow-gold { text-shadow: 0 0 25px rgba(245, 158, 11, 0.6); }
-        
-        /* Loading Bar จริตวิเคราะห์ข้อมูล */
-        .analysis-bar {
-            height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
-            width: 100%; position: relative; overflow: hidden;
-        }
-        .analysis-bar::after {
-            content: ''; position: absolute; left: -100%; width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, #fff, transparent);
-            animation: scan 2s infinite linear;
-        }
-        @keyframes scan { 0% { left: -100%; } 100% { left: 100%; } }
-
-        /* Floating Animation */
-        .float { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        :root { --gold: #D4AF37; --deep-bg: #000000; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--deep-bg); color: #fff; overflow-x: hidden; }
+        .terminal-grid { background-image: radial-gradient(circle at 2px 2px, rgba(212, 175, 55, 0.05) 1px, transparent 0); background-size: 40px 40px; }
+        .gold-glow { text-shadow: 0 0 30px rgba(212, 175, 55, 0.5); }
+        .elite-border { border: 1px solid rgba(212, 175, 55, 0.2); background: linear-gradient(145deg, rgba(10,10,10,0.9) 0%, rgba(0,0,0,1) 100%); }
+        .scanner-line { width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); position: absolute; top: 0; animation: scan-move 3s infinite linear; }
+        @keyframes scan-move { 0% { top: 0%; opacity: 0; } 50% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
     </style>
 </head>
-<body class="min-h-screen">
-    <canvas id="bg-canvas"></canvas>
+<body class="min-h-screen terminal-grid select-none">
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-20">
-            <div class="float">
-                <h1 class="text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600 glow-gold italic">NITHIROTE</h1>
-                <div class="analysis-bar mt-2"></div>
-                <p class="text-amber-200/30 tracking-[0.6em] text-[11px] mt-4 uppercase font-bold">8D Master Key Sovereign Intelligence</p>
-            </div>
-            <div class="bg-amber-500/10 border border-amber-500/20 p-4 rounded-xl mt-8 md:mt-0 backdrop-blur-md">
-                <p class="text-[10px] font-mono text-amber-500 font-bold">SYSTEM STATUS: <span class="animate-pulse text-emerald-400">ACTIVE OVER THAI SOVEREIGN</span></p>
-                <p class="text-[9px] font-mono text-slate-500">IP-DNA ASSET: ลข.01 | 2026-02-24</p>
+    <div class="fixed top-0 w-full p-4 flex justify-between items-center z-50 opacity-50 font-mono text-[9px] uppercase tracking-[0.5em]">
+        <div>PROTOCOL: NITH-SUPERCOMPUTING-GEN</div>
+        <div id="live-status">GENERATE_IP_DNA: ACTIVE</div>
+        <div>PROTECTION: THAI SOVEREIGN LAW</div>
+    </div>
+
+    <main class="relative z-10 min-h-screen flex flex-col items-center justify-center p-6">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-[10vw] font-black leading-none tracking-tighter gold-glow uppercase italic mb-2">NITHIROTE</h1>
+            <p class="text-[10px] text-amber-600/60 font-bold uppercase tracking-[1em] mb-10">Master Key Global Protocol</p>
+            <div class="inline-block px-6 py-2 border border-amber-500/30 rounded-full">
+                <span class="text-[10px] text-amber-500 font-bold tracking-widest uppercase">ชำระค่าธรรมเนียมตามมาตรฐานทองคำ</span>
             </div>
         </header>
 
-        <main class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            <section class="lg:col-span-7 glass-8d p-16 rounded-[4rem] relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-8 opacity-10 text-9xl font-black">8D</div>
-                <p class="text-amber-500 text-xs uppercase tracking-[0.4em] font-bold mb-6">Algorithmically Derived Risk Fee</p>
-                <h2 class="text-[10rem] font-black leading-none tracking-tighter text-white" id="main-counter">+0.0%</h2>
-                <div class="mt-10 flex items-center space-x-4">
-                    <span class="px-4 py-1 bg-amber-500 text-black text-[10px] font-bold rounded-full">LIVE AUDIT</span>
-                    <p class="text-slate-400 text-xs italic tracking-wide">"Analyzing global pain points & opportunity cost..."</p>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-2 w-full max-w-[1400px]">
+            <div class="lg:col-span-8 elite-border p-16 relative overflow-hidden group">
+                <div class="scanner-line"></div>
+                <div class="flex justify-between items-start mb-16">
+                    <span class="text-xs font-mono text-amber-500/50 italic">[ SUPERCOMPUTING NFT GENERATE ]</span>
+                    <span class="text-[10px] text-slate-600 font-bold">RATE: GOLD_STANDARD_STABLE</span>
                 </div>
-            </section>
+                <h3 class="text-[14vw] font-black leading-none m-0 p-0 tracking-tighter" id="main-val">+0.0%</h3>
+                <div class="mt-8 grid grid-cols-2 gap-4 text-[10px] text-slate-500 font-mono">
+                    <p>» P2P NFT IP PLATFORM</p>
+                    <p>» IDENTITY KYC SECURED</p>
+                    <p>» NON-TRANSFERABLE CODE</p>
+                    <p>» SOVEREIGN PROTECTION</p>
+                </div>
+            </div>
 
-            <aside class="lg:col-span-5 flex flex-col gap-10">
-                <div class="glass-8d p-10 rounded-[3rem] flex-1">
-                    <h4 class="text-amber-500 text-[10px] font-bold uppercase tracking-widest mb-4 italic">Core Philosophy</h4>
-                    <p class="text-2xl font-medium leading-tight text-white italic">"Earning While Learning"</p>
-                    <p class="text-slate-500 text-[10px] mt-4 uppercase leading-relaxed">Integrated Human Capital Development Framework</p>
+            <div class="lg:col-span-4 flex flex-col gap-2">
+                <div class="elite-border p-10 flex-1">
+                    <div class="text-amber-500 text-[10px] mb-4 font-bold tracking-widest uppercase italic">IP ASSET CODE</div>
+                    <div class="text-4xl font-light tracking-tighter">ลข.01</div>
+                    <p class="text-[9px] text-slate-600 mt-4 leading-relaxed">ลิขสิทธิ์การจัดการแบบกว้างและไม่เปิดเผยกลไก [CONFIDENTIAL]</p>
                 </div>
-                <div class="glass-8d p-10 rounded-[3rem] flex-1 border-emerald-500/20">
-                    <h4 class="text-emerald-500 text-[10px] font-bold uppercase tracking-widest mb-4 italic">Protection Layer</h4>
-                    <p class="text-2xl font-medium text-white tracking-tighter">SOVEREIGN IP SECURED</p>
-                    <div class="h-1 w-20 bg-emerald-500/40 mt-4"></div>
+                <div class="elite-border p-10 flex-1 bg-amber-500/5">
+                    <div class="text-amber-500 text-[10px] mb-4 font-bold tracking-widest uppercase italic">STRATEGY</div>
+                    <div class="text-xl font-light italic">"EARNING WHILE LEARNING"</div>
+                    <div class="mt-8 flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-amber-500 rounded-full animate-ping"></div>
+                        <span class="text-[9px] text-amber-500/60 uppercase">System Auditing active</span>
+                    </div>
                 </div>
-            </aside>
-        </main>
+            </div>
+        </div>
 
-        <footer class="mt-32 text-center border-t border-slate-900 pt-16">
-            <p class="text-slate-600 text-[10px] tracking-[0.5em] uppercase mb-4">Master Key Protocol By Nithirote Suwatthiranin</p>
-            <p class="text-[8px] text-slate-800">THIS SYSTEM IS PROPRIETARY AND PROTECTED BY INTERNATIONAL LAWS AND THAI SOVEREIGN JURISDICTION.</p>
+        <footer class="mt-20 w-full flex justify-between text-[9px] text-slate-700 font-mono tracking-widest border-t border-white/5 pt-8">
+            <p>JURISDICTION: THAI SOVEREIGN TERRITORY</p>
+            <p>© 2026 NITHIROTE SUWATTHIRANIN</p>
         </footer>
-    </div>
+    </main>
 
     <script>
-        // --- 1. THE 8D BACKGROUND (Particle Engine) ---
-        const canvas = document.getElementById('bg-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        window.addEventListener('resize', init);
-        function init() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            particles = [];
-            for(let i=0; i<80; i++) {
-                particles.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    size: Math.random() * 2 + 0.5,
-                    speedX: (Math.random() - 0.5) * 0.5,
-                    speedY: (Math.random() - 0.5) * 0.5,
-                    opacity: Math.random()
-                });
-            }
-        }
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                ctx.fillStyle = `rgba(245, 158, 11, ${p.opacity})`;
-                ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2); ctx.fill();
-                p.x += p.speedX; p.y += p.speedY;
-                if(p.x < 0 || p.x > canvas.width) p.speedX *= -1;
-                if(p.y < 0 || p.y > canvas.height) p.speedY *= -1;
-            });
-            requestAnimationFrame(animate);
-        }
-        init(); animate();
-
-        // --- 2. LUXURY COUNTER ANIMATION ---
-        let currentCount = 0;
-        const targetCount = 12.5;
-        const counterElement = document.getElementById('main-counter');
-        function updateCounter() {
-            if(currentCount < targetCount) {
-                currentCount += 0.07;
-                counterElement.innerText = '+' + currentCount.toFixed(1) + '%';
-                requestAnimationFrame(updateCounter);
+        let val = 0;
+        const target = 12.5;
+        function update() {
+            if(val < target) {
+                val += 0.08;
+                document.getElementById('main-val').innerText = '+' + val.toFixed(1) + '%';
+                requestAnimationFrame(update);
             } else {
-                counterElement.innerText = '+12.5%';
+                document.getElementById('main-val').innerText = '+12.5%';
             }
         }
-        setTimeout(updateCounter, 1000); // ดีเลย์ 1 วิให้คนดูตั้งตัวก่อนวิ๊ง!
+        setTimeout(update, 1000);
     </script>
 </body>
 </html>
